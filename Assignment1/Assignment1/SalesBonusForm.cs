@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Assignment1
 {
-    public partial class SalesBonusForm : Form
+    public partial class SalesBonusForm : System.Windows.Forms.Form
     {
         public SalesBonusForm()
         {
