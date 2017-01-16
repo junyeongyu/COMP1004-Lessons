@@ -103,6 +103,7 @@
             this.calculateButton.TabIndex = 6;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // printButton
             // 
@@ -112,6 +113,7 @@
             this.printButton.TabIndex = 7;
             this.printButton.Text = "Print";
             this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
             // nextButton
             // 
@@ -121,6 +123,7 @@
             this.nextButton.TabIndex = 8;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // englishRadioButton
             // 
@@ -130,7 +133,6 @@
             this.englishRadioButton.Name = "englishRadioButton";
             this.englishRadioButton.Size = new System.Drawing.Size(59, 17);
             this.englishRadioButton.TabIndex = 0;
-            this.englishRadioButton.TabStop = true;
             this.englishRadioButton.Text = "English";
             this.englishRadioButton.UseVisualStyleBackColor = true;
             // 

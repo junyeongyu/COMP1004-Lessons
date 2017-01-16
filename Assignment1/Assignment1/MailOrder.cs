@@ -28,5 +28,26 @@ namespace Assignment1
         {
 
         }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            double percentageOfHourWorked = Convert.ToDouble(totalHoursWorkedTextBox.Text) / 160;
+            double totalBonusAmount = Convert.ToDouble(totalMonthlySalesTextBox.Text) * 0.02;
+            double salesBonus = percentageOfHourWorked * totalBonusAmount;
+            salesBonusTextBox.Text = Convert.ToString(salesBonus);
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            employeeNameTextBox.Text = String.Empty;
+            employeeIdTextBox.Text = String.Empty;
+            totalHoursWorkedTextBox.Text = String.Empty;
+            salesBonusTextBox.Text = String.Empty;
+        }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The form you filled up is being sent to the printer.");
+        }
     }
 }
