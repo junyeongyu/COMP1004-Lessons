@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ * 
+ * The App name: Sharp Mail Order – SALES BONUS
+ * Author's name: Junyeong Yu
+ * App Creation Date: January 16, 2017
+ * App description: Entrance point to load MailOrder Form.
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +23,7 @@ namespace Assignment1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SalesBonusForm());
+            Application.Run(new MailOrder());
         }
     }
 }
