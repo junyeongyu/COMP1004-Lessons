@@ -107,7 +107,7 @@
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(229, 308);
+            this.printButton.Location = new System.Drawing.Point(273, 308);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
             this.printButton.TabIndex = 7;
@@ -117,7 +117,7 @@
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(127, 308);
+            this.nextButton.Location = new System.Drawing.Point(153, 308);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
             this.nextButton.TabIndex = 8;
@@ -135,6 +135,7 @@
             this.englishRadioButton.TabIndex = 0;
             this.englishRadioButton.Text = "English";
             this.englishRadioButton.UseVisualStyleBackColor = true;
+            this.englishRadioButton.CheckedChanged += new System.EventHandler(this.englishRadioButton_CheckedChanged);
             // 
             // frenchRadioButton
             // 
@@ -145,10 +146,11 @@
             this.frenchRadioButton.TabIndex = 0;
             this.frenchRadioButton.Text = "Français";
             this.frenchRadioButton.UseVisualStyleBackColor = true;
+            this.frenchRadioButton.CheckedChanged += new System.EventHandler(this.frenchRadioButton_CheckedChanged);
             // 
             // employeeNameTextBox
             // 
-            this.employeeNameTextBox.Location = new System.Drawing.Point(141, 129);
+            this.employeeNameTextBox.Location = new System.Drawing.Point(185, 129);
             this.employeeNameTextBox.Name = "employeeNameTextBox";
             this.employeeNameTextBox.Size = new System.Drawing.Size(162, 20);
             this.employeeNameTextBox.TabIndex = 1;
@@ -160,33 +162,34 @@
             this.spanishRadioButton.Name = "spanishRadioButton";
             this.spanishRadioButton.Size = new System.Drawing.Size(63, 17);
             this.spanishRadioButton.TabIndex = 0;
-            this.spanishRadioButton.Text = "Espanol";
+            this.spanishRadioButton.Text = "Español";
             this.spanishRadioButton.UseVisualStyleBackColor = true;
+            this.spanishRadioButton.CheckedChanged += new System.EventHandler(this.spanishRadioButton_CheckedChanged);
             // 
             // employeeIdTextBox
             // 
-            this.employeeIdTextBox.Location = new System.Drawing.Point(141, 160);
+            this.employeeIdTextBox.Location = new System.Drawing.Point(185, 160);
             this.employeeIdTextBox.Name = "employeeIdTextBox";
             this.employeeIdTextBox.Size = new System.Drawing.Size(162, 20);
             this.employeeIdTextBox.TabIndex = 2;
             // 
             // totalHoursWorkedTextBox
             // 
-            this.totalHoursWorkedTextBox.Location = new System.Drawing.Point(141, 207);
+            this.totalHoursWorkedTextBox.Location = new System.Drawing.Point(185, 207);
             this.totalHoursWorkedTextBox.Name = "totalHoursWorkedTextBox";
             this.totalHoursWorkedTextBox.Size = new System.Drawing.Size(162, 20);
             this.totalHoursWorkedTextBox.TabIndex = 3;
             // 
             // totalMonthlySalesTextBox
             // 
-            this.totalMonthlySalesTextBox.Location = new System.Drawing.Point(141, 238);
+            this.totalMonthlySalesTextBox.Location = new System.Drawing.Point(185, 238);
             this.totalMonthlySalesTextBox.Name = "totalMonthlySalesTextBox";
             this.totalMonthlySalesTextBox.Size = new System.Drawing.Size(162, 20);
             this.totalMonthlySalesTextBox.TabIndex = 4;
             // 
             // salesBonusTextBox
             // 
-            this.salesBonusTextBox.Location = new System.Drawing.Point(141, 271);
+            this.salesBonusTextBox.Location = new System.Drawing.Point(185, 271);
             this.salesBonusTextBox.Name = "salesBonusTextBox";
             this.salesBonusTextBox.ReadOnly = true;
             this.salesBonusTextBox.Size = new System.Drawing.Size(162, 20);
@@ -208,7 +211,7 @@
             this.languageGroupBox.Controls.Add(this.englishRadioButton);
             this.languageGroupBox.Controls.Add(this.frenchRadioButton);
             this.languageGroupBox.Controls.Add(this.spanishRadioButton);
-            this.languageGroupBox.Location = new System.Drawing.Point(141, 13);
+            this.languageGroupBox.Location = new System.Drawing.Point(185, 13);
             this.languageGroupBox.Name = "languageGroupBox";
             this.languageGroupBox.Size = new System.Drawing.Size(163, 100);
             this.languageGroupBox.TabIndex = 19;
@@ -219,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 346);
+            this.ClientSize = new System.Drawing.Size(380, 346);
             this.Controls.Add(this.languageGroupBox);
             this.Controls.Add(this.salesBonusTextBox);
             this.Controls.Add(this.totalMonthlySalesTextBox);

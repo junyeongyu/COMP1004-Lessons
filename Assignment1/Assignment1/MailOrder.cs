@@ -49,5 +49,52 @@ namespace Assignment1
         {
             MessageBox.Show("The form you filled up is being sent to the printer.");
         }
+
+        private void englishRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (((RadioButton)sender).Checked) {
+                languageGroupBox.Text = "Languages";
+                employeeNameLabel.Text = "Employee's Name :";
+                employeeIdLabel.Text = "Employee ID :";
+                totalHoursWorkedLabel.Text = "Total Hours Worked :";
+                totalMonthlySalesLabel.Text = "Total Monthly Sales :";
+                salesBonusLabel.Text = "Sales Bonus :";
+                calculateButton.Text = "Calculate";
+                nextButton.Text = "Next";
+                printButton.Text = "Print";
+            }
+        }
+
+        private void frenchRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (((RadioButton)sender).Checked)
+            {
+                languageGroupBox.Text = "Langues";
+                employeeNameLabel.Text = "Le nom de l'employé :";
+                employeeIdLabel.Text = "ID employé :";
+                totalHoursWorkedLabel.Text = "Nombre total d'heures travaillées :";
+                totalMonthlySalesLabel.Text = "Total des ventes mensuelles :";
+                salesBonusLabel.Text = "Bonus de vente :";
+                calculateButton.Text = "Calculer";
+                nextButton.Text = "Prochain";
+                printButton.Text = "Impression";
+            }
+        }
+
+        private void spanishRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (((RadioButton)sender).Checked)
+            {
+                languageGroupBox.Text = "Idiomas";
+                employeeNameLabel.Text = "Nombre del empleado :";
+                employeeIdLabel.Text = "ID de empleado :";
+                totalHoursWorkedLabel.Text = "Total de horas trabajadas :";
+                totalMonthlySalesLabel.Text = "Total de ventas mensuales :";
+                salesBonusLabel.Text = "Bono de ventas :";
+                calculateButton.Text = "Calcular";
+                nextButton.Text = "Siguiente";
+                printButton.Text = "Impresión";
+            }
+        }
     }
 }
