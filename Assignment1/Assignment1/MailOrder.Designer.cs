@@ -179,6 +179,7 @@
             this.totalHoursWorkedTextBox.Name = "totalHoursWorkedTextBox";
             this.totalHoursWorkedTextBox.Size = new System.Drawing.Size(162, 20);
             this.totalHoursWorkedTextBox.TabIndex = 3;
+            this.totalHoursWorkedTextBox.TextChanged += new System.EventHandler(this.totalHoursWorkedTextBox_TextChanged);
             // 
             // totalMonthlySalesTextBox
             // 

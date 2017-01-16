@@ -96,5 +96,29 @@ namespace Assignment1
                 printButton.Text = "Impresión";
             }
         }
+
+        private void totalHoursWorkedTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string text = totalHoursWorkedTextBox.Text;
+            if (text == "")
+            {
+                return;
+            }
+
+            double number;
+            if (double.TryParse(text, out number) == false)
+            {
+                MessageBox.Show("You need to put the positive number.");
+                totalHoursWorkedTextBox.Text = String.Empty;
+                return;
+            }
+
+            if (number > 160)
+            {
+                MessageBox.Show("You shouldn't put more than 160 hours.");
+                totalHoursWorkedTextBox.Text = String.Empty;
+                return;
+            }
+        }
     }
 }
