@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Assignment1
+namespace COMP1004_W2017_Lesson2
 {
-    public partial class SalesBonusForm : Form
+    public partial class Form1 : Form
     {
-        public SalesBonusForm()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

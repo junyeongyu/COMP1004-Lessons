@@ -1,6 +1,6 @@
-﻿namespace Assignment1
+﻿namespace COMP1004_W2017_Lesson2
 {
-    partial class SalesBonusForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // SalesBonusForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "SalesBonusForm";
-            this.Text = "Sales Bonus";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "Form1";
         }
 
         #endregion
