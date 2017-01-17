@@ -100,7 +100,8 @@
             this.calculateButton.Location = new System.Drawing.Point(24, 308);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
-            this.calculateButton.TabIndex = 6;
+            this.calculateButton.TabIndex = 0;
+            this.calculateButton.TabStop = false;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
@@ -110,7 +111,8 @@
             this.printButton.Location = new System.Drawing.Point(273, 308);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
-            this.printButton.TabIndex = 7;
+            this.printButton.TabIndex = 0;
+            this.printButton.TabStop = false;
             this.printButton.Text = "Print";
             this.printButton.UseVisualStyleBackColor = true;
             this.printButton.Click += new System.EventHandler(this.printButton_Click);
@@ -120,7 +122,8 @@
             this.nextButton.Location = new System.Drawing.Point(153, 308);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
-            this.nextButton.TabIndex = 8;
+            this.nextButton.TabIndex = 0;
+            this.nextButton.TabStop = false;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
@@ -133,6 +136,7 @@
             this.englishRadioButton.Name = "englishRadioButton";
             this.englishRadioButton.Size = new System.Drawing.Size(59, 17);
             this.englishRadioButton.TabIndex = 0;
+            this.englishRadioButton.TabStop = true;
             this.englishRadioButton.Text = "English";
             this.englishRadioButton.UseVisualStyleBackColor = true;
             this.englishRadioButton.CheckedChanged += new System.EventHandler(this.englishRadioButton_CheckedChanged);
@@ -187,6 +191,8 @@
             this.totalMonthlySalesTextBox.Name = "totalMonthlySalesTextBox";
             this.totalMonthlySalesTextBox.Size = new System.Drawing.Size(162, 20);
             this.totalMonthlySalesTextBox.TabIndex = 4;
+            this.totalMonthlySalesTextBox.Enter += new System.EventHandler(this.totalMonthlySalesTextBox_Enter);
+            this.totalMonthlySalesTextBox.Leave += new System.EventHandler(this.totalMonthlySalesTextBox_Leave);
             // 
             // salesBonusTextBox
             // 
@@ -194,7 +200,8 @@
             this.salesBonusTextBox.Name = "salesBonusTextBox";
             this.salesBonusTextBox.ReadOnly = true;
             this.salesBonusTextBox.Size = new System.Drawing.Size(162, 20);
-            this.salesBonusTextBox.TabIndex = 17;
+            this.salesBonusTextBox.TabIndex = 0;
+            this.salesBonusTextBox.TabStop = false;
             // 
             // logoPictureBox
             // 
@@ -215,7 +222,7 @@
             this.languageGroupBox.Location = new System.Drawing.Point(185, 13);
             this.languageGroupBox.Name = "languageGroupBox";
             this.languageGroupBox.Size = new System.Drawing.Size(163, 100);
-            this.languageGroupBox.TabIndex = 19;
+            this.languageGroupBox.TabIndex = 0;
             this.languageGroupBox.TabStop = false;
             this.languageGroupBox.Text = "Languages";
             // 

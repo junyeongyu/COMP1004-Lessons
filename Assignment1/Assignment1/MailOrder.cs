@@ -19,6 +19,8 @@ namespace Assignment1
 {
     public partial class MailOrder : System.Windows.Forms.Form
     {
+        private double _currentTotalMonthlySales = 0; // Real Total MonthlySales
+
         public MailOrder()
         {
             InitializeComponent();
@@ -26,13 +28,14 @@ namespace Assignment1
 
         private void MailOrder_Load(object sender, EventArgs e)
         {
-
+            // For setting currency in TextBox
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
         }
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
             double percentageOfHourWorked = Convert.ToDouble(totalHoursWorkedTextBox.Text) / 160;
-            double totalBonusAmount = Convert.ToDouble(totalMonthlySalesTextBox.Text) * 0.02;
+            double totalBonusAmount = _currentTotalMonthlySales * 0.02;//Convert.ToDouble(totalMonthlySalesTextBox.Text) * 0.02;
             double salesBonus = percentageOfHourWorked * totalBonusAmount;
             salesBonusTextBox.Text = Convert.ToString(salesBonus);
         }
@@ -119,6 +122,28 @@ namespace Assignment1
                 totalHoursWorkedTextBox.Text = String.Empty;
                 return;
             }
+        }
+
+        private void totalMonthlySalesTextBox_Leave(object sender, EventArgs e)
+        {
+            Double value;
+            if (Double.TryParse(totalMonthlySalesTextBox.Text, out value) == false)
+            {
+                totalMonthlySalesTextBox.Text = getCurrency(_currentTotalMonthlySales);
+                return;
+            }
+
+            _currentTotalMonthlySales = value;
+            totalMonthlySalesTextBox.Text = getCurrency(value);
+        }
+        private String getCurrency(Double number)
+        {
+            return String.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:C2}", number);
+        }
+
+        private void totalMonthlySalesTextBox_Enter(object sender, EventArgs e)
+        {
+            totalMonthlySalesTextBox.Text = String.Empty;
         }
     }
 }
