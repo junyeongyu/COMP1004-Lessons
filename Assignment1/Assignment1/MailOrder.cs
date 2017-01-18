@@ -19,7 +19,7 @@ namespace Assignment1
 {
     public partial class MailOrder : System.Windows.Forms.Form
     {
-        private double _currentTotalMonthlySales = 0; // Real Total MonthlySales
+        private double _currentTotalMonthlySales = 0; // Current Total Monthly Sales
 
         public MailOrder()
         {
@@ -34,6 +34,24 @@ namespace Assignment1
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            if (employeeNameTextBox.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Employee Name Needs to be entered.");
+                return;
+            } else if (employeeIdTextBox.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Employee ID Needs to be entered.");
+                return;
+            } else if (totalHoursWorkedTextBox.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Total Hours Worked Needs to be entered.");
+                return;
+            } else if (totalMonthlySalesTextBox.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Total Monthly Sales Needs to be entered.");
+                return;
+            }
+
             double percentageOfHourWorked = Convert.ToDouble(totalHoursWorkedTextBox.Text) / 160;
             double totalBonusAmount = _currentTotalMonthlySales * 0.02;//Convert.ToDouble(totalMonthlySalesTextBox.Text) * 0.02;
             double salesBonus = percentageOfHourWorked * totalBonusAmount;
@@ -130,6 +148,12 @@ namespace Assignment1
             if (Double.TryParse(totalMonthlySalesTextBox.Text, out value) == false)
             {
                 totalMonthlySalesTextBox.Text = getCurrency(_currentTotalMonthlySales);
+                return;
+            }
+            if (value < 0)
+            {
+                MessageBox.Show("You need to put the positive number.");
+                totalMonthlySalesTextBox.Text = String.Empty;
                 return;
             }
 
