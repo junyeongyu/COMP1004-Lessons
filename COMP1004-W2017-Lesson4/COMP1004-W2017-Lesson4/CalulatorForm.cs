@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP1004_W2017_Lesson3
+namespace COMP1004_W2017_Lesson4
 {
     public partial class CalulatorForm : Form
     {
@@ -47,7 +47,8 @@ namespace COMP1004_W2017_Lesson3
                     {
                         resultRichTextBox.Text = calculatorButton.Text;
                         this._isCalculatorClear = false;
-                    } else
+                    }
+                    else
                     {
                         resultRichTextBox.Text += calculatorButton.Text;
                     }
