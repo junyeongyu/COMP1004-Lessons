@@ -1,6 +1,6 @@
 ﻿namespace COMP1004_W2017_Lesson4
 {
-    partial class CalulatorForm
+    partial class CalculatorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -306,6 +306,7 @@
             this.MaximizeBox = false;
             this.Name = "CalulatorForm";
             this.Text = "Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalulatorForm_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

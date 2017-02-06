@@ -8,17 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP1004_W2017_Lesson4
+namespace COMP1004_W2017_Lesson5
 {
-    public partial class CalulatorForm : Form
+    public partial class CalculatorForm : Form
     {
         // PRIVATE INSTANCE VARIABLES
         private string _operandOne;
         private string _operandTwo;
         private bool _isCalculatorClear;
 
+        // Three. create a reference to the previous form
+        public SplashForm previousForm; // against oop
+
         // CONSTRUCTORS 
-        public CalulatorForm()
+        public CalculatorForm()
         {
             InitializeComponent();
 
@@ -57,6 +60,24 @@ namespace COMP1004_W2017_Lesson4
                     break;
                 case "Other":
                     break;
+            }
+        }
+
+        private void CalulatorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.OK)
+            {
+                // This shold exit the application
+                // Application.Exit();
+                // this.Close();
+                this.previousForm.Close();
+            }
+            else
+            {
+                e.Cancel = true;
+                //this.Show();
             }
         }
     }

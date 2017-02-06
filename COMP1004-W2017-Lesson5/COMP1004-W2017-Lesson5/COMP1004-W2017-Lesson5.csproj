@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B5E7CD8-9301-4957-A219-C69A05032044}</ProjectGuid>
+    <ProjectGuid>{FA042DB1-B057-40AD-A5C7-C3A2A83F5FD0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>COMP1004_W2017_Lesson4</RootNamespace>
+    <RootNamespace>COMP1004_W2017_Lesson5</RootNamespace>
     <AssemblyName>COMP1004-W2017-Lesson2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
