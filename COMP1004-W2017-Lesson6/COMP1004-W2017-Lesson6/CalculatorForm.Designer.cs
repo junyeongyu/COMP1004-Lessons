@@ -1,4 +1,4 @@
-﻿namespace COMP1004_W2017_Lesson5
+﻿namespace COMP1004_W2017_Lesson6
 {
     partial class CalculatorForm
     {

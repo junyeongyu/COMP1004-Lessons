@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FA042DB1-B057-40AD-A5C7-C3A2A83F5FD0}</ProjectGuid>
+    <ProjectGuid>{AC6E6B71-A2CF-4A5A-B54B-637A6B204B1B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>COMP1004_W2017_Lesson5</RootNamespace>
+    <RootNamespace>COMP1004_W2017_Lesson6</RootNamespace>
     <AssemblyName>COMP1004-W2017-Lesson2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbilityForm.Designer.cs">
+      <DependentUpon>AbilityForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="SplashForm.Designer.cs">
       <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AbilityForm.resx">
+      <DependentUpon>AbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP1004_W2017_Lesson5
+namespace COMP1004_W2017_Lesson6
 {
     public partial class CalculatorForm : Form
     {
@@ -28,11 +28,12 @@ namespace COMP1004_W2017_Lesson5
             InitializeComponent();
 
             _clearCalculator();
-            
+
         }
 
         // Properties
-        public string calculatorFormLayout {
+        public string calculatorFormLayout
+        {
             get
             {
                 return this._calculatorFormLayout;
